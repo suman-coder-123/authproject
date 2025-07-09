@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.right {
+    background-image: url(image/img-1.avif);
+    object-fit: cover;
+}
+.info-h {
+    font-weight: bold;
+}
+.info {
+    padding: 90px 60px;
+}
+.name{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.box {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    border-radius: 5px;
+}
+.checkbox{
+    display: flex;
+    justify-content:space-around ;
+    align-items: center;
+}
+.terms{
+    margin: 0;
+    padding: 0;
+}
+#check {
+    margin-top: 3px;
+}
+
+.bar {
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.bar::before,
+.bar::after {
+    content: "";
+    border: 1px solid rgb(179, 177, 177) ;
+    flex: 1;
+}
+.or {
+    padding: 0 10px;
+    align-items: center;
+    padding-bottom: 3px;
+}
+.btn1 {
+    background-color: #312ebc;
+    color: white;
+    border: none;
+    padding: 5px;
+    font-size: 15px;
+}
+.btn2 {
+    padding: 5px 0 ;
+    border: 1px solid black ;
+    font-size: 15px;
+    font-weight: 600;
+    align-items: center;
+}
+
