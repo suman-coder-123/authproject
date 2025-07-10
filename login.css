@@ -26,37 +26,20 @@ body {
     font-weight: bold;
 }
 .info {
-    padding: 50px 60px;
-}
-.name{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    padding: 100px 60px;
 }
 .box {
     display: flex;
     flex-direction: column;
     gap: 15px;
     border-radius: 5px;
+    padding: 40px 0 ;
 }
 .link {
     text-decoration: none;
     text-align: end;
     font-size: 15px;
 }
-.checkbox{
-    display: flex;
-    justify-content:space-around ;
-    align-items: center;
-}
-.terms{
-    margin: 0;
-    padding: 0;
-}
-#check {
-    margin-top: 3px;
-}
-
 .bar {
     display: flex;
     align-items: center;
@@ -93,14 +76,5 @@ body {
 .icon {
     padding-bottom: 5px;
     
-}
-@media (max-width :500px) {
-    .name {
-        display: block;
-    }
-    .name input {
-        display: block;
-        margin-bottom: 10px;
-    }
 }
 

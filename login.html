@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="register.css">
+    <link rel="stylesheet" href="login.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
 
-    <title>Registration</title>
+    <title>Login</title>
 </head>
 <body>
-    <main>
+        <main>
         <div class="container">
         <div class="full  row ">
             <div class="right col-lg-6">
@@ -20,22 +20,17 @@
                 </div>
             </div>
             <div class="left col-lg-6">
-                <form id="createaccount">
+                <form id="login">
                 <div class="info">
-                    <h3 class="info-h">Create account</h3>
-                    <p>Already have a account ? <a  class="link" href="login.html"> login</a></p>
+                    <h3 class="info-h">Welcome Back</h3>
+                    <p>Don't have a account? <a class="link" href="register.html"> Sign up </a></p>
                     <div class="box">
-                    <div class="name">
-                        <input   type="text" id="firstname" placeholder="First Name" required>
-                        <input   type="text" id="lastname" placeholder="Last Name" >
-                    </div>
+
                     <input type="text"   id="email" placeholder="Email" required>
                     <input type="password" id="password" placeholder="Password" required>
-                    <div class="checkbox">
-                        <input type="checkbox" id="check" required>
-                        <p class="terms">I agree to DopeSaas <a href=" terms">Terms of Service</a> and <a href="policy"> Privacy policy</a></p>
-                    </div>
-                    <button  type="submit"  class="btn1"> Create Account</button>
+                    <a class="link"  href=""> Forgot Password </a>
+
+                    <button  type="submit"  class="btn1"> Login</button>
                     <div class="bar">
                         <span class="or">or</span>
                     </div>
@@ -56,7 +51,8 @@
 
 
 
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
-    <script src="register.js"></script>
+    <script src="login.js"></script>
 </body>
 </html>
