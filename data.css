@@ -1,5 +1,8 @@
 body {
-     background-color:#f5ead7;
+    background-image: url(image/BG.jpg);
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
 }
 .heading {
     text-align: center;
@@ -13,6 +16,9 @@ body {
     padding: 15px;
     margin-bottom: 10px;
     border-radius: 10px;
-    background-color: #fdfefe;
+    background-color: rgb(29, 134, 233);
+    color: rgb(252, 251, 251);
+
+  
     border: 2px solid black;
 }

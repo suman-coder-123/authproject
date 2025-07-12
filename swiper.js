@@ -1,5 +1,4 @@
 const swiper = new Swiper(".mySwiper", {
-  slidesPerView: 2,
   spaceBetween: 30,
   loop: true,
   speed : 1000,
