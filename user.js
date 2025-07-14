@@ -20,7 +20,7 @@ window.addEventListener("DOMContentLoaded", () => {
                 <p><strong>Last Name:</strong> ${user.lastname}</p>
                 <p><strong>Email:</strong> ${user.email}</p>
                 <p><strong>Password:</strong> ${user.password}</p>
-              
+              </div>
             `;
         });
 
