@@ -11,7 +11,7 @@ document.getElementById("login").addEventListener("submit" , function(event) {
     );
 
     if (found){
-        window.location.href="home.html";
+        window.location.href="index.html";
     } else {
         alert("Invalid Information ");
     }
