@@ -1,24 +1,38 @@
 body {
-    background-image: url(image/BG.jpg);
+    background-image: url(image/bg-2.jpg);
     background-size: cover;
-    background-position: top;
+    background-position: center;
     background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
 }
 .heading {
     text-align: center;
     font-size: 50px;
+    color: #264D3A;
+    margin-top: 20px;
 }
-#user-section {
-    width: 50%;
-    margin: 20px auto;
-}
-.user-card{
-    padding: 15px;
-    margin-bottom: 10px;
-    border-radius: 10px;
-    background-color: rgb(29, 134, 233);
-    color: rgb(252, 251, 251);
 
-  
-    border: 2px solid black;
+#user-section {
+    width: 90%;
+    max-width: 1200px;
+    margin: 40px auto;
+}
+#users {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+.user-card {
+    padding: 15px;
+    border-radius: 10px;
+    background-color: rgba(242, 246, 245, 0.95);
+    color: #264D3A;
+    border: 2px solid #264D3A;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
+.user-card h3 {
+    margin-top: 0;
+    color: #D87D4A;
 }
