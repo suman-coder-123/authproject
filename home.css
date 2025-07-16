@@ -130,6 +130,7 @@ nav a{
 .two-text h3{
     margin-bottom: 60px;
     font-size: 24px;
+    margin-right: 100px;
 }
 .two-text h2{
     color: yellowgreen;
@@ -148,11 +149,12 @@ nav a{
 }
 .two-image{
     flex: 1;
+    
 }
 .two-image img{
     width: 100%;
     max-width: 300px;
-    margin-left: 50px;
+    
 }
 .two-image img:hover{
     transition: 0.5s;
@@ -328,6 +330,30 @@ body.Light-mode .theme-toggle {
   color: #0e0c0c;
 }
 
-
-
-
+.one::before,
+.three::before{
+    content: attr(data-number);
+    position: absolute;
+    top: 20px;
+    left: 5%;
+    font-size: 12rem;
+    font-weight: bold;
+    color: rgba(255, 255, 255, 0.05);
+    z-index: 0;
+    pointer-events: none;
+}
+.one-card,.two-card,.three-card{
+    position: relative;
+    z-index: 1;
+}
+.two::before{
+    content: attr(data-number);
+    position: absolute;
+    top: 20px;
+    font-size: 12rem;
+    font-weight: bold;
+    color: rgba(255, 255, 255, 0.05);
+    z-index: 0;
+    pointer-events: none;
+    right: 35%;
+}
