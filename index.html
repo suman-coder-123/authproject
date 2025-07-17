@@ -3,107 +3,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home Page</title>
-    <link rel="stylesheet" href="home.css">
-    <!-- <link href="https:/  /cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script> -->
+    <link rel="stylesheet" href="register.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
 
+    <title>Registration</title>
 </head>
 <body>
-   
-   <header>
-    <div class="logo">MNTN</div>
-    <nav>
-      <ul>    
-        <li><a href="swiper.html">Gallery Section </a></li>
-        <li><a href="todo.html">To-Do-List</a></li>
-        <li><a href="data.html">API Data</a></li>
-        <li><a href="user.html">Login Info </a></li>
+    <main>
+        <div class="container">
+        <div class="full  row ">
+            <div class="right col-lg-6">
+                <img src="image/Frame 3.png" class="logo" alt="logo">
+                <div class="text">
+                <h2 >Numquam architecto iure</h2>
+                <p>Ut corrupti est molestiae occaecati  <br>voluptatem vel harum explicabo numquam.</p>
+                </div>
+            </div>
+            <div class="left col-lg-6">
+                <form id="createaccount">
+                <div class="info">
+                    <h3 class="info-h">Create account</h3>
+                    <p>Already have a account ? <a  class="link" href="login.html"> login</a></p>
+                    <div class="box">
+                    <div class="name">
+                        <input   type="text" id="firstname" placeholder="First Name" required>
+                        <input   type="text" id="lastname" placeholder="Last Name" >
+                    </div>
+                    <input type="text"   id="email" placeholder="Email" required>
+                    <input type="password" id="password" placeholder="Password" required>
+                    <div class="checkbox">
+                        <input type="checkbox" id="check" required>
+                        <p class="terms">I agree to DopeSaas <a href=" terms">Terms of Service</a> and <a href="policy"> Privacy policy</a></p>
+                    </div>
+                    <button  type="submit"  class="btn1"> Create Account</button>
+                    <div class="bar">
+                        <span class="or">or</span>
+                    </div>
+                    <button class="btn2"> 
+                        <img  class="icon"  src="image/google.png" alt="google" > Continue with Google
+                    </button>
+                    <button class="btn2">
+                        <img  class="icon" src="image/apple.png" alt="apple"> Continue with Apple
+                    </button>
 
-      </ul>
-    </nav> 
-      <button id="theme-toggle" class="theme-toggle"> Light Mode</button>
+                    </div>
+                </div>
+                </form>
+            </div>
+        </div>
+        </div>
+    </main>
 
-  </header>
-  <section class="hero">
-    <div class="overlay"></div>
-    <div class="hero-content">
-        <h2>----   A   Hiking   Guide</h2>
-        <h3>Be Prepared For The </h3>
-        <h3>Mountains And Beyond!</h3>
-    </div>  
-  </section>
- <section class="one" data-number="01">
-    <div class="one-card">
-      <div class="one-text">
-        <h2>---- Get Started</h2>
-        <h3>What Level Of Hiker Are You?</h3>
-        <p>Determining what level of hiker you are can be an important tool when planning future hikes. This hiking level guide will help you plan hikes according to different hike ratings set by various websites like All Trails and Modern Hiker. What type of hiker are you - novice, moderate, advanced moderate, expert, or expert backpacker?</p>
-        <a href="#">Read More ➞</a>
-      </div>
-      <div class="one-image">
-        <img src="image/img1.jpg" alt="Hiker">
-      </div>
-    </div>
-  </section>
- 
 
-  <section class="two" data-number="02">
-    <div class="two-card">
-        <div class="two-image">
-            <img src="image/img2.jpg" alt="Hiking Gear">
-        </div>
-        <div class="two-text">
-            <h2>----  HIKING ESSENTIALS</h2>
-            <h3>Picking The Right Hiking Gear!</h3>
-            <p>The nice thing about beginning hiking is that you don't really need any special gear, you can probably get away with things you already have. Let's start with clothing . A typical mistake hiking beginners make is wearing jeans and regular clothes, which will get heavy and chafe wif they get sweaty or wet.</p>
-            <a href="#">Read More ➞</a>
-        </div>
-        
-    </div>
-  </section>
-  <section class="three" data-number="03">
-    <div class="three-card">
-   <div class="three-text">
-    <h2>----  WHERE YOU GO IS THE KEY</h2>
-    <h3>Understand Your Map & Timing</h3>
-    <p>To start, print out the hiking guide and map. If it's raining, throw them in a zip-lock bag. Read over the guide, study the map , and have a good idea of what to expect . I like to know what my next landmark is as i hike. For example,  i'll read the guide and know that say, in a mile, i make a right turn of the junction.</p>
-    <a href="#">Read More ➞</a>
-   </div>
-   <div class="three-image">
-    <img src="image/img3.jpg" alt="Compass">
-   </div>
-    </div>
-  </section>
-  <footer class="footer">
-    <div class="footer-container">
-      <div class="footer-left">
-        <h2>MNTN</h2>
-        <h3>Get out there & discover your next slope, mountain & destinition</h3>
-      </div>
-      <div class="footer-links">
-        <div>
-          <h3>More On The Blog</h3>
-          <ul>
-            <li><a href="#">About MNTN</a></li>
-            <li><a href="#">Contribution & Writers</a></li>
-             <li><a href="#"> Write For Us</a></li>
-              <li><a href="#">Contact Us</a></li>
-               <li><a href="#">Privacy Policy</a></li>
-          </ul>
-        </div>
-        <div>
-          <h3>More On MNTN</h3>
-          <ul>
-            <li><a href="#">The Team</a></li>
-            <li><a href="#">Jobs</a></li>
-            <li><a href="#">Blog</a></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </footer>
-  
-  <script src="home.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+    <script src="register.js"></script>
 </body>
 </html>
