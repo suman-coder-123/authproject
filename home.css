@@ -13,7 +13,7 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 30px 80px;
+    padding: 20px 5%;
     position: absolute;
     top: 0;
     width: 100%;
@@ -36,7 +36,7 @@ nav a{
   background: url(image/bg-2.jpg) no-repeat center center/cover;
   display: flex;
   align-items: center;
-  padding: 0 80px;
+  padding: 0 5%;
   position: relative;
   
 }
@@ -55,7 +55,7 @@ nav a{
     
 }
 .hero-content h2{
-    color: rgb(86, 19, 210);
+    color: rgb(4, 24, 28);
     font-size: 15px;
     text-transform: uppercase;
     letter-spacing: 2px;
@@ -67,7 +67,7 @@ nav a{
     
 }
 .one {
-  padding: 100px 80px;
+  padding: 80px 5%;
   margin-top: -80px; 
   position: relative;
   
@@ -76,6 +76,7 @@ nav a{
     display: flex;
     align-items: center;
     gap: 60px;
+    flex-wrap: wrap;
 }
 .one-text{
     flex: 1;
@@ -115,14 +116,15 @@ nav a{
 }
 .two{
 
-  padding: 100px 80px;
+  padding: 80px 5%;
   margin-top: -80px; 
   position: relative;
 }
 .two-card{
-    gap: 20px;
+    gap: 60px;
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
 }
 .two-text{
     flex: 1;
@@ -173,7 +175,7 @@ nav a{
     cursor: pointer;
 }
 .three{
-    padding: 100px 80px;
+  padding: 80px 5%;
     margin-top: -80px;
     position: relative;
 }
@@ -181,6 +183,7 @@ nav a{
     gap: 60px;
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
 }
 .three-text{
     flex: 1;
@@ -304,6 +307,12 @@ body.Light-mode {
     color: rgb(249, 248, 248);
     
 }
+.Light-mode .hero-content h2{
+   
+    color: rgb(249, 248, 248);
+    font-weight: bold;
+    
+}
 .Light-mode nav a{
     color: rgb(250, 249, 249);
     text-decoration: none;
@@ -328,6 +337,15 @@ body.Light-mode {
 body.Light-mode .theme-toggle {
   border-color: #0b0a0a;
   color: #0e0c0c;
+}
+.Light-mode .one::before{
+    color: rgba(2, 2, 2, 0.05);
+}
+.Light-mode .two::before{
+    color: rgba(2, 2, 2, 0.05);
+}
+.Light-mode .three::before{
+    color: rgba(2, 2, 2, 0.05);
 }
 
 .one::before,
@@ -356,4 +374,82 @@ body.Light-mode .theme-toggle {
     z-index: 0;
     pointer-events: none;
     right: 35%;
+}
+@media (max-width: 992px) {
+  header {
+    flex-direction: column;
+    padding: 15px 5%;
+    text-align: center;
+  }
+  nav ul {
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 10px;
+  }
+  .hero-content h3 {
+    font-size: 32px;
+  }
+  .one-card, .two-card, .three-card {
+    flex-direction: column; 
+    text-align: center;
+  }
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+  .Light-mode .hero-content h3{
+    font-size: 32px;
+  } .one::before, .two::before, .three::before {
+    font-size: 6rem; 
+    top: 10px;
+    left: 10px; 
+  }
+
+  .two::before {
+    right: auto;
+  }
+}
+
+
+@media (max-width: 576px) {
+  .hero-content h3 {
+    font-size: 14px;
+  }
+  .one, .two, .three {
+    padding: 40px 20px;
+  }
+  .theme-toggle {
+    margin-top: 15px;
+  }
+  .footer-links {
+    flex-direction: column;
+    margin-left: 0;
+    gap: 20px;
+  }
+  .Light-mode .hero-content h3{
+    font-size: 16px;
+  }
+  .one::before, .two::before, .three::before {
+    font-size: 4rem;  
+    top: 25px;
+    left: 5px;
+  }
+}
+@media (max-width: 768px) {
+  .one::before, .two::before, .three::before {
+    font-size: 6rem; 
+  }
+  .Light-mode .hero-content h3{
+    font-size: 16px;
+  }
+  .Light-mode .hero-content h2{
+    font-size: 12px;
+  }
+  .two-text::before {
+    font-size: 4rem;
+    left: 10px;
+    top: 20%;
+    transform: none;
+  } 
 }
