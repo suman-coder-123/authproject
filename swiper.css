@@ -2,9 +2,9 @@
 body {
     padding: 0;
     margin: 0;
-    background-image: url(image/BG.jpg);
+    background-image: url(image/bg-2.jpg);
     background-size: cover;
-    background-position: top;
+    background-position: center;
     background-repeat: no-repeat;
 }
 .container {
@@ -14,10 +14,11 @@ body {
 }
 h1 {
     text-align: center;
+    color:#F2F6F5;
 }
 .swiper {
     width: 100%;
-    height: 500px;
+    height: 420px;
     margin :0 auto;
 
 }
@@ -25,10 +26,10 @@ h1 {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgb(60, 124, 208);
+    background-color: #A8B9A3;
     color: rgb(235, 226, 226);
     text-align: center;
-    padding:50px;
+    padding:20px;
 
 }
 .swiper-slide img {

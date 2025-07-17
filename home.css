@@ -319,14 +319,11 @@ body.Light-mode {
     font-size: 20px;
     font-weight: bold;
 }
-body.Light-mode footer,
-body.Light-mode .footer-links ul li a,
-body.Light-mode .footer-left h2,
-body.Light-mode .footer-left h3 {
-    color: #111; /* Dark text for visibility */
+.Light-mode .footer-links ul li a{
+    color: rgb(6, 6, 6);
+    text-decoration: none;
+    font-size: 14px;
 }
-
-
 .theme-toggle {
     background: none;
     padding: 5px 10px;
@@ -411,7 +408,6 @@ body.Light-mode .theme-toggle {
 
   .two::before {
     right: auto;
-
   }
 }
 

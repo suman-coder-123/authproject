@@ -1,36 +1,44 @@
 body {
-    background-image: url(image/BG.jpg);
-    background-position: initial;
+    background-image: url(image/bg-2.jpg);
+    background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    color: white;
+    color: rgb(9, 8, 8);
 }
 h1 {
     text-align: center;
     font-size: 50px;
+    color: #264D3A;
+}
+
+#userinfo {
+    width: 90%;
+    max-width: 1200px;
+    margin: 40px auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
 }
 
 .user-card {
     border: 1px solid #ccc;
-    background-color: #f9f9f9;
+    background-color:#F2F6F5;
     padding: 15px;
     margin: 20px 0;
     border-radius: 8px;
     box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
     max-width: 50%;
 }
-
-
 .user-card h3 {
     margin-top: 0;
-    color: #333;
+    color: #1c4d36;
     font-size: 20px;
 }
 
 .user-card p {
     margin: 5px 0;
     font-size: 16px;
-    color: #555;
+    color: #A8B9A3;
 }
 
 .user-card p strong {

@@ -10,7 +10,7 @@ window.addEventListener("DOMContentLoaded", () => {
             return;
         }
 
-        let html = "<h2>All Registered Users:</h2>";
+        let html = "";
 
         users.forEach((user, index) => {
             html += `
